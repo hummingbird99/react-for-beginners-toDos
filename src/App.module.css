@@ -1,4 +1,78 @@
-.title {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 18px;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+body {
+  background-color: #448aff;
+}
+
+.container {
+  width: 1000px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -400px;
+  margin-left: -450px;
+}
+
+h1 {
+  color: #f8bbd0;
+  font-size: 6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+input {
+  width: 200px;
+  padding: 14px;
+  border: none;
+  background-color: #64b5f6;
+  color: aliceblue;
+  font-family: "Bree Serif", serif;
+  font-size: large;
+}
+
+input::placeholder {
+  color: aliceblue;
+  font-size: large;
+  font-family: "Open Sans", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+input + .btn1 {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+hr {
+  border-color: #fff176;
+}
+
+li {
+  color: #fff176;
+  font-size: 2rem;
+  font-family: "Bree Serif", serif;
+}
+
+.btn {
+  margin-left: 1%;
+  width: 30px;
+  height: 30px;
+  border-style: none;
+  border-radius: 30%;
+  background-color: #ba68c8;
+  color: #fff176;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn1 {
+  padding: 10.5px;
+  border-style: none;
+  color: aliceblue;
+  background-color: #64b5f6;
+  font-size: large;
+  font-family: "Open Sans", sans-serif;
 }

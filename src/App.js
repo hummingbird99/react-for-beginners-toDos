@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./App.module.css";
 
 function App() {
   const [toDo, setToDo] = useState("");
@@ -17,9 +18,9 @@ function App() {
     setToDos((currentArray) => [toDo, ...currentArray]); // ...: 배열의 원소 나열
     setToDo("");
   };
-  console.log(toDos);
+
   return (
-    <div>
+    <div className={styles.container}>
       <h1>My To Dos ({toDos.length})</h1>
       <form onSubmit={onSubmit}>
         <input
@@ -28,14 +29,16 @@ function App() {
           type="text"
           placeholder="Write your to do..."
         />
-        <button>Add To Do</button>
+        <button className={styles.btn1}>Add To Do</button>
       </form>
       <hr />
       <ul>
         {toDos.map((item, index) => (
           <li key={index}>
             {item}
-            <button onClick={() => deleteBtn(index)}>❌</button>
+            <button onClick={() => deleteBtn(index)} className={styles.btn}>
+              v
+            </button>
           </li>
         ))}
       </ul>
