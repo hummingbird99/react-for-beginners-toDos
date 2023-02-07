@@ -15,7 +15,7 @@ function App() {
     if (toDo === "") {
       return;
     }
-    setToDos((currentArray) => [toDo, ...currentArray]); // ...: 배열의 원소 나열
+    setToDos((currentArray) => [toDo, ...currentArray]); // ...: 배열의 원소 나열(spread syntax)
     setToDo("");
   };
 
